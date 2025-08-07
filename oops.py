@@ -86,20 +86,68 @@
     
 ## product discount))
 
-class discount:
-    def __init__(self,name,price,discount):
-        self.name=name
-        self.price=price
-        self.discount=discount
-        
-    def final_price(self):
-        return self.price-self.discount
-    
-    def show_detials(self):
-        print(name ,self.name)
-        print(price,self,price)
-        print(discount,self.discount)
-        
-p=Product("shampoo",550,250)
-p.display_show()
+# from itertools import product
 
+
+# class discount:
+#     def __init__(self,name,price,discount):
+#         self.name=name
+#         self.price=price
+#         self.discount=discount
+        
+#     def final_price(self):
+#         return self.price-self.discount
+    
+#     def show_detials(self):
+#         print(name ,self.name)
+#         print(price,self,price)
+#         print(discount,self.discount)
+        
+# p=product("shampoo",550,250)
+# p.display_show()
+
+
+##Inheritance)
+
+# class Animal:
+#     def __init__(self,species):
+#         self.species=species
+#     def display_species(self):
+#         print(f"The animal is {self.species}")
+
+# class dog(Animal):
+#     def __init__(self):
+#         super().__init__("Dog")
+# my_pet =dog()
+# my_pet.display_species()
+        
+
+
+# ##ABSTRACT
+
+# from abc import ABC, abstractmethod
+# class vehicle(ABC):
+#     @abstractmethod
+#     def startengine(self):
+#         pass
+#     def horn(self):
+#         print("beep")
+# class car(vehicle):
+#     def startengine(self):
+#         print("Car started using beep")
+# c=car()
+# c.startengine()
+
+
+
+
+
+
+
+class calculator:
+    def add(self,n1,n2,n3=0,n4=0):
+        return n1+n2+n3+n4
+calc=calculator()
+print(calc.add(10,20))
+print(calc.add(10,20,30))
+print(calc.add(10,20,30,40))  
